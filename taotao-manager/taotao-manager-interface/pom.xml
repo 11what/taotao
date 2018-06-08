@@ -12,5 +12,10 @@
   		<artifactId>taotao-manager-pojo</artifactId>
   		<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	<!-- 由于controller层反序列化的时候 会提示警告找不到com.github.pagehelper.page -->
+  	<dependency>
+        <groupId>com.github.pagehelper</groupId>  
+        <artifactId>pagehelper</artifactId>  
+    </dependency>  
   </dependencies>
 </project>
