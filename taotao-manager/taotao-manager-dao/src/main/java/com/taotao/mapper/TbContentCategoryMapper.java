@@ -15,7 +15,9 @@ public interface TbContentCategoryMapper {
     int insert(TbContentCategory record);
 
     int insertSelective(TbContentCategory record);
-
+    
+    int saveAndGetId(TbContentCategory record);
+    
     List<TbContentCategory> selectByExample(TbContentCategoryExample example);
 
     TbContentCategory selectByPrimaryKey(Long id);
