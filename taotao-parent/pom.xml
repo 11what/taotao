@@ -33,7 +33,9 @@
     <zkclient.version>0.1</zkclient.version>  
     <activemq.version>5.11.2</activemq.version>  
     <freemarker.version>2.3.23</freemarker.version>  
-    <quartz.version>2.2.2</quartz.version>  
+    <quartz.version>2.2.2</quartz.version> 
+    <fastdfs-client.version>1.27</fastdfs-client.version> 
+    <fastjson.version>1.2.47</fastjson.version>
   </properties>
   <dependencyManagement>
   	<dependencies>
@@ -81,8 +83,7 @@
         <dependency>  
             <groupId>junit</groupId>  
             <artifactId>junit</artifactId>  
-            <version>${junit.version}</version>  
-            <scope>test</scope>  
+            <version>${junit.version}</version>   
         </dependency>  
         <!-- 日志处理 -->  
         <dependency>  
@@ -221,6 +222,18 @@
             <artifactId>freemarker</artifactId>  
             <version>${freemarker.version}</version>  
         </dependency> 
+        <!-- fastdfs(文件集群服务器)客户端操作 -->
+        <dependency>  
+	        <groupId>org.csource</groupId>  
+	        <artifactId>fastdfs-client-java</artifactId>  
+	        <version>${fastdfs-client.version}</version>
+    	</dependency>
+    	<!-- 阿里巴巴fastjson -->
+		<dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>${fastjson.version}</version>
+		</dependency>
   	</dependencies>
   </dependencyManagement>
   <build>
