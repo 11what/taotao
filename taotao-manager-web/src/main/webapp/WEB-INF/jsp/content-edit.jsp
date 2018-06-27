@@ -70,7 +70,7 @@ var contentEditPage = {
 				if(data.status == 200){
 					$.messager.alert('提示','编辑内容成功!');
 					$("#contentList").datagrid("reload");
-					TT.closeCurrentWindow();
+					setTimeout("TT.closeCurrentWindow()",1000);
 				}
 			});
 		},
