@@ -27,7 +27,13 @@
         <groupId>com.taotao</groupId>  
         <artifactId>taotao-content-interface</artifactId>  
         <version>0.0.1-SNAPSHOT</version>  
-    </dependency>  
+    </dependency> 
+    <!-- 依赖taotao-search-interface -->  
+    <dependency>  
+        <groupId>com.taotao</groupId>  
+        <artifactId>taotao-search-interface</artifactId>  
+        <version>0.0.1-SNAPSHOT</version>  
+    </dependency>   
     <!-- Spring -->  
     <dependency>  
         <groupId>org.springframework</groupId>  
